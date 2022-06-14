@@ -12,6 +12,7 @@ const span = document.querySelector( ".color"
 );
 
 changecol.addEventListener("click", () => {
-   bodyEl.style.backgroundColor = getRandomHexColor();
-   span.textContent = getRandomHexColor(); 
+  const color = getRandomHexColor()
+   bodyEl.style.backgroundColor = color;
+   span.textContent = color; 
 });
